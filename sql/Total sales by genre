@@ -1,4 +1,7 @@
-SELECT genre, CAST(SUM(total_sales) AS DECIMAL(10,2)) AS 'Total sales by genre'
+
+SELECT genre, 
+  CAST(SUM(total_sales) AS DECIMAL(10,2)) AS 'Total sales by genre'
 FROM `vgchartz-2024`
 GROUP BY genre
 ORDER BY 'Total sales by genre' DESC;
+
