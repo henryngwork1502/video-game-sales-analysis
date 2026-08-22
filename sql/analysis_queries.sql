@@ -2,22 +2,6 @@
 -- DATA CLEANING
 -- ============================
 
--- Confirm column data type before running numeric functions
-DESCRIBE `vgchartz-2024`;
-
--- Check for blank/whitespace values (different from NULL)
-SELECT COUNT(*) 
-FROM `vgchartz-2024`
-WHERE TRIM(critic_score) = '';
-
--- Validate the value range of critic_score, excluding nulls/blanks
-SELECT 
-    MIN(CAST(critic_score AS DECIMAL(3,1))) AS `min score`,
-    MAX(CAST(critic_score AS DECIMAL(3,1))) AS `max score`
-FROM `vgchartz-2024`
-WHERE critic_score IS NOT NULL 
-  AND TRIM(critic_score) != '';
-
 -- Check for nulls across the dataset (example: critic_score)
 SELECT COUNT(*) 
 FROM `vgchartz-2024` 
@@ -28,6 +12,22 @@ SELECT title, console, COUNT(*)
 FROM `vgchartz-2024` 
 GROUP BY title, console 
 HAVING COUNT(*) > 1;
+
+-- Confirm column data type before running numeric functions
+DESCRIBE `vgchartz-2024`;
+
+-- Check for blank/whitespace values (different from NULL)
+SELECT COUNT(*) 
+FROM `vgchartz-2024`
+WHERE TRIM(critic_score) = '';
+
+-- Validate the value range of critic_score, excluding nulls/blanks
+SELECT 
+    MIN(CAST(critic_score AS DECIMAL(10,1))) AS `min score`,
+    MAX(CAST(critic_score AS DECIMAL(10,1))) AS `max score`
+FROM `vgchartz-2024`
+WHERE critic_score IS NOT NULL 
+  AND TRIM(critic_score) != '';
 
 -- ============================
 -- ANALYSIS QUERIES
