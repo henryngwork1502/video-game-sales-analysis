@@ -15,4 +15,4 @@ Dataset: [Video Game Sales - vgchartz-2024] https://app.mavenanalytics.io/datase
 sql/         → all SQL cleaning and analysis queries
 
 ### 1. SQL — Data Cleaning & Analysis
-First I check for NULL and duplicate in the data set to make sure everything are good to work with no need to adjust anything. Then I start with 
+First I check for NULL and duplicate in the data set to make sure everything are good to work with no need to adjust anything. Then I start to validated data type before running numerical code as sometime when import CSV file to mySQL it string the column as text rather than number despite it a number column. 
