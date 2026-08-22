@@ -2,6 +2,9 @@
 -- DATA CLEANING
 -- ============================
 
+-- Confirm column data type before running numeric functions
+DESCRIBE `vgchartz-2024`;
+
 -- Check for nulls across the dataset (example: critic_score)
 SELECT COUNT(*) 
 FROM `vgchartz-2024` 
