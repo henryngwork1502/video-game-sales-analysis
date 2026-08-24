@@ -15,7 +15,7 @@ Dataset: [Video Game Sales - vgchartz-2024] https://app.mavenanalytics.io/datase
 sql/         → all SQL cleaning and analysis queries
 
 ### 1. SQL — Data Cleaning & Analysis
-First I start cleaning the data by check for NULL and duplicate in the data set to make sure everything are good to work with no need to adjust anything. Then I validated data type before running numerical code as sometime when import CSV file to mySQL it string the column as text rather than number despite it a number column. After that I check for blank space and validate the value range of critic score, that excluding null and blanks space. Move to analyse data I start with find out total sale by genre, sonsole and publisher, which show really interesting insight. For genre Shooter is the top selling genre overall (468.17M units), follow by Action  
+First I start cleaning the data by check for NULL and duplicate in the data set to make sure everything are good to work with no need to adjust anything. Then I validated data type before running numerical code as sometime when import CSV file to mySQL it string the column as text rather than number despite it a number column. After that I check for blank space and validate the value range of critic score, that excluding null and blanks space. Move to analyse data I start with find out total sale by genre, sonsole and publisher, which show really interesting insight. For genre Shooter is the top selling genre overall (468.17M units), which is quite high compare to the second most popular genre, Action (383.89M). Despite the Action-Adventure and RPG scoring higher on critic reviews, Which support that high critical retire doesn't drive volume sale. 
 
 
 Queried total sales by genre, console, and publisher
