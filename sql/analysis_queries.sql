@@ -45,6 +45,13 @@ FROM `vgchartz-2024`
 GROUP BY console
 ORDER BY `Total console sale` DESC;
 
+-- Critic score by genre
+SELECT genre,
+CAST(SUM(critic_score) AS DECIMAL (10,1)) AS `Critic score by genre`
+FROM `vgchartz-2024`
+GROUP BY genre;
+
+
 -- Top 10 games by total sales across all platforms
 SELECT title, CAST(SUM(total_sales) AS DECIMAL(10,2)) AS 'Total sales all platforms'
 FROM `vgchartz-2024`
