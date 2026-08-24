@@ -15,8 +15,17 @@ Dataset: [Video Game Sales - vgchartz-2024] https://app.mavenanalytics.io/datase
 sql/         → all SQL cleaning and analysis queries
 
 ### 1. SQL — Data Cleaning & Analysis
-First I start cleaning the data by check for NULL and duplicate in the data set to make sure everything are good to work with no need to adjust anything. Then I validated data type before running numerical code as sometime when import CSV file to mySQL it string the column as text rather than number despite it a number column. After that I check for blank space and validate the value range of critic score, that excluding null and blanks space. Move to analyse data I find out that, Shooter is the top selling genre overall (468.17M units), follow by Action (383.89M). Despite high in sale both average critic score are not really high compare to nicher genre like Sandbox and Music, with 8.3 for Shooter and 8.41 for Action. Sandbox with average critic score of 9.2 and Music with 8.6 but their sale only 1.89M unit for Sandbox and 2.04M unit for Music. Moreover, top genres are not driven by different games title, it condense in 2 giant franchises GTA and Call of Duty. Lastly, North America (234.33M) and PAL regions (164.30M) account for over 85% of all shooter sales. Japan (11.29M) reject this trend with only 2.5% of total shooter sales. 
+
+First, I cleaned the dataset by checking for NULL values and duplicates to ensure the data was complete and ready for analysis. Next, I validated data types before running numerical queries, as importing a CSV file into MySQL can sometimes store numeric columns as text. After that, I checked for blank spaces and validated the range of critic scores, excluding null and empty entries.
+
+Moving on to data analysis, I found that Shooter is the top-selling genre overall (468.17 million units), followed by Action (383.89 million). However, despite high sales, average critic scores for Shooters (5.68) and Action (5.67) are relatively modest compared to niche genres like Sandbox (9.20) and Music (8.60), which achieved sales of only 1.89 million and 2.04 million units, respectively. Moreover, sales in these top genres are not spread across a wide variety of titles; instead, they are heavily concentrated within only two franchises: Grand Theft Auto and Call of Duty. Finally, North America (234.33M) and PAL regions (164.30M) account for over 85% of all Shooter sales, whereas Japan (11.29M) rejects this trend, representing only 2.5% of the total.
 
 
-Queried total sales by genre, console, and publisher
-- Delete critic per genre
+
+
+
+
+
+
+
+
