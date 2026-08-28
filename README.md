@@ -23,7 +23,7 @@ Moving on to data analysis, I found that Shooter is the top-selling genre overal
 
 ### 1. Excel - 
 
-While cross-validating SQL publisher totals using Excel’s SUMIFS function, I discovered inconsistent publisher naming within the dataset — “Activision” appeared under at least four variants, including Activision, Activision Blizzard, Activision Publishing, Inc., and Activision Value. This meant my original SQL query, which grouped publishers by exact name match, understated Activision’s true total sales by treating each variant as a separate publisher. This finding highlights the importance of data standardization before aggregation, and demonstrates the value of cross-validating results across tools rather than relying on a single query in isolation
+While cross-validating SQL publisher totals using Excel’s SUMIFS function, I discovered inconsistent publisher naming within the dataset — “Activision” appeared under at least four variants, including Activision, Activision Blizzard, Activision Publishing, Inc., and Activision Value. This meant my original SQL query, which grouped publishers by exact name match, understated Activision’s true total sales by treating each variant as a separate publisher. This finding highlights the importance of data standardization before aggregation, and demonstrates the value of cross-validating results across tools rather than relying on a single query in isolation. (Check need)
 
 
 
