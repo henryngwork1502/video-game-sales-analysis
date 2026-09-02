@@ -25,7 +25,9 @@ Moving on to data analysis, I found that Shooter is the top-selling genre overal
 
 While cross-validating SQL publisher totals using Excel’s SUMIFS function, I discovered inconsistent publisher naming within the dataset — “Activision” appeared under at least four variants, including Activision, Activision Blizzard, Activision Publishing, Inc., and Activision Value. This meant my original SQL query, which grouped publishers by exact name match, understated Activision’s true total sales by treating each variant as a separate publisher. This finding highlights the importance of data standardization before aggregation, and demonstrates the value of cross-validating results across tools rather than relying on a single query in isolation. (Check need)
 
-
+•	The Activision naming inconsistency (your best one)
+•	Sales trend confirms the 2010-2013 peak, aligning with PS3/Xbox 360 era
+•	Regional split — Shooter and Action are NA/PAL-heavy, Sandbox and Music show unusually high JP share proportionally despite small volume
 
 
 
