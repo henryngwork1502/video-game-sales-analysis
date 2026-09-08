@@ -12,7 +12,6 @@ Dataset: [Video Game Sales - vgchartz-2024] https://app.mavenanalytics.io/datase
 - **Power BI** — interactive dashboard
 
 ## Project Structure
-sql/         → all SQL cleaning and analysis queries
 
 ### 1. SQL — Data Cleaning & Analysis
 
