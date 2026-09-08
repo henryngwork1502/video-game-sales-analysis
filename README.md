@@ -23,11 +23,11 @@ Moving on to data analysis, I found that Shooter is the top-selling genre overal
 
 ### 1. Excel - 
 
-While cross-validating SQL publisher totals using Excel’s SUMIFS function, I discovered inconsistent publisher naming within the dataset — “Activision” appeared under at least four variants, including Activision, Activision Blizzard, Activision Publishing, Inc., and Activision Value. This meant my original SQL query, which grouped publishers by exact name match, understated Activision’s true total sales by treating each variant as a separate publisher. This finding highlights the importance of data standardization before aggregation, and demonstrates the value of cross-validating results across tools rather than relying on a single query in isolation. (Check need)
+While I cross validating SQL publisher totals using Excel’s SUMIFS function, I discovered inconsistent publisher naming within the dataset “Activision” appeared under at least four variants, including Activision, Activision Blizzard, Activision Publishing, Inc., and Activision Value. As a result, this meant that my original SQL query, which grouped publishers by exact name match, understated Activision’s true total sales by treating each variant as a separate publisher. This finding highlights the importance of data standardization before aggregation, and illustrates the value of cross validating results across tools rather than relying on a single query in isolation.
 
-•	The Activision naming inconsistency (your best one)
-•	Sales trend confirms the 2010-2013 peak, aligning with PS3/Xbox 360 era
-•	Regional split — Shooter and Action are NA/PAL-heavy, Sandbox and Music show unusually high JP share proportionally despite small volume
+From 1989 to 2018, peak sale performance was between 2010 and 2013, ranging from 131.54M to 128.87M units per year, and recording the highest sales in 2011 at 144.43M units, approximately 34.6 times higher than the lowest year, 1989 (4.17M units).  
+
+Regional analysis by genre showed that most Shooter and Action games are sold in North America and PAL region with an average of approximately 85% combined for both genres, with only approximately 2.81% sold in Japan. Most of other genres saw below 9% of sales in Japan indicating relatively low demand for these game types in that market. However, Sandbox was unusually high compared to other genres in Japan with up to 27.51%.
 
 
 
