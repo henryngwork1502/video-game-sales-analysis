@@ -4,7 +4,9 @@
 Analysed global video game sales (1980s–2018) using SQL and Excel. Cleaned and queried data in MySQL to compare genre, publisher, and regional performance; built trend/variance analysis in Excel. Found critic scores don’t predict sales, Sandbox rated highest but sold least.
 
 ## Data Source
-Dataset: [Video Game Sales - vgchartz-2024] https://app.mavenanalytics.io/datasets?search=Video Game Sales
+
+Dataset: VGChartz Video Game Sales (2024), originally sourced from [Kaggle](https://www.kaggle.com/datasets/asaniczka/video-game-sales-2024) (by ASANICZKA), accessed via [Maven Analytics](https://app.mavenanalytics.io/datasets?search=Video%20Game%20Sales). Licensed under ODC-BY.
+
 
 ## Tools Used
 - **SQL (MySQL)** — data cleaning and analysis queries
