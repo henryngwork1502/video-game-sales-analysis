@@ -7,6 +7,7 @@ Analysed global video game sales (1980s–2018) using SQL and Excel. Cleaned and
 
 Dataset: VGChartz Video Game Sales (2024), originally sourced from [Kaggle](https://www.kaggle.com/datasets/asaniczka/video-game-sales-2024) (by ASANICZKA), accessed via [Maven Analytics](https://app.mavenanalytics.io/datasets?search=Video%20Game%20Sales). Licensed under ODC-BY.
 
+*Note: This analysis was done independently, no guided project or tutorial was used.*
 
 ## Tools Used
 - **SQL (MySQL)** — data cleaning and analysis queries
